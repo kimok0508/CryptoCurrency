@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="kr.edcan.cryptocurrency" version="1.0.0">
+	<profile name="mobile" />
+	<ui-application appid="kr.edcan.cryptocurrency" exec="cryptocurrency" type="capp" multiple="false" taskmanage="true" nodisplay="false" launch_mode="single">
+		<icon>cryptocurrency.png</icon>
+		<label>cryptocurrency</label>
+	</ui-application>
+	<privileges>
+  		<privilege>http://tizen.org/privilege/internet</privilege>
+	</privileges>
+</manifest>
