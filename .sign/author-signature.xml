@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="bin%2Fcryptocurrency">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>t+FHNvru6FIQouIok81xt+RpJ6o1reeE+UHb6VRa0t4=</DigestValue>
+<DigestValue>j13QqbBiHPEc/J1OAyAMLtvC5xWtjINBcVEBvkuEdRE=</DigestValue>
 </Reference>
 <Reference URI="shared%2Fres%2Fcryptocurrency.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -12,7 +12,7 @@
 </Reference>
 <Reference URI="tizen-manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>7jQDXY+PRppD6CJRf9NvbXScXv1ZkunJx9OjxPPC8L8=</DigestValue>
+<DigestValue>Y50L4tH9pU0QsGVn3mc7Dar9+5+AUbY2v+9y/qjLbic=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -23,9 +23,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-LO1ZUYpclP0mSllfdhnFuFh/i7nIMo2z/sc06UCSP9m5HfNYOqf+mgZ0lW6LbzLprZuScVj6ZxR0
-1xnzN67Ws1unP5BVejMbA0S16R2J6hheuB4OVY9mhDKTqluu797WnnbZkEQ98wy8E2dfoRxwSvWy
-EJje2a4vQLSsTakwaB0=
+gF941qrCsFcVBJYeGE8yZAzPu4VWyG2o6M/o44nAsSfyxpUsJYvv2kH0y94sfc31nv61PCsLohsD
+Obs1hEWNjL6HyBobw3Q9TiWk6rLLbfsVoqunr07qFBF72HoOJkeIpi2iyUmMwBBLF34EgxkotbEk
+ivGIcEnY+meGQ14BZlI=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

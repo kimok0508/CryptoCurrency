@@ -31,12 +31,13 @@ currency_item_clicked(void *data, Evas_Object *obj, void *event_info)
 	defail_list_add(list, "폐장 가격: %s", priceData->closing_price);
 	defail_list_add(list, "최저 가격: %s", priceData->min_price);
 	defail_list_add(list, "최고 가격: %s", priceData->max_price);
-	defail_list_add(list, "평균 가격: %s", priceData->average_price);
 	defail_list_add(list, "거래량: %s", priceData->units_traded);
-	defail_list_add(list, "1일 규모: %s", priceData->volume_1day);
-	defail_list_add(list, "7일 규모: %s", priceData->volume_7day);
-	defail_list_add(list, "구입 가격: %s", priceData->buy_price);
-	defail_list_add(list, "매각 가격: %s", priceData->sell_price);
+	defail_list_add(list, "거래 금액: %s", priceData->acc_trade_value);
+	defail_list_add(list, "전일 폐장가: %s", priceData->prev_closing_price);
+	defail_list_add(list, "최근 24시간 거래량: %s", priceData->units_traded_24H);
+	defail_list_add(list, "최근 24시간 거래 금액: %s", priceData->acc_trade_value_24H);
+	defail_list_add(list, "최근 24시간 변동가: %s", priceData->fluctate_24H);
+	defail_list_add(list, "최근 24시간 변동률: %s", priceData->fluctate_rate_24H);
 
 	elm_naviframe_item_push(naviData->ad->naviFrame, currencyName, NULL, NULL, list, NULL);
 }

@@ -16,17 +16,30 @@
 #define PACKAGE "kr.edcan.cryptocurrency"
 #endif
 
+
+//				"opening_price":"215900",
+//				"closing_price":"217900",
+//				"min_price":"214000",
+//				"max_price":"222600",
+//				"units_traded":"64164.88",
+//				"acc_trade_value":"14058840173.05",
+//				"prev_closing_price":"215800",
+//				"units_traded_24H":"66350.04",
+//				"acc_trade_value_24H":"14530986261.3",
+//				"fluctate_24H":"2,100",
+//				"fluctate_rate_24H":"0.97"
 typedef struct CurrencyPriceData{
 	char *opening_price;
 	char *closing_price;
 	char *min_price;
 	char *max_price;
-	char *average_price;
 	char *units_traded;
-	char *volume_1day;
-	char *volume_7day;
-	char *buy_price;
-	char *sell_price;
+	char *acc_trade_value;
+	char *prev_closing_price;
+	char *units_traded_24H;
+	char *acc_trade_value_24H;
+	char *fluctate_24H;
+	char *fluctate_rate_24H;
 	long date;
 } currencyPriceData;
 

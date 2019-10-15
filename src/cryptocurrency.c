@@ -80,12 +80,13 @@ parse_json(appdata_s *ad)
 				data->closing_price = (char *) json_object_get_string_member(currencyObject, "closing_price");
 				data->min_price = (char *) json_object_get_string_member(currencyObject, "min_price");
 				data->max_price = (char *) json_object_get_string_member(currencyObject, "max_price");
-				data->average_price = (char *) json_object_get_string_member(currencyObject, "average_price");
 				data->units_traded = (char *) json_object_get_string_member(currencyObject, "units_traded");
-				data->volume_1day = (char *) json_object_get_string_member(currencyObject, "volume_1day");
-				data->volume_7day = (char *) json_object_get_string_member(currencyObject, "volume_7day");
-				data->buy_price = (char *) json_object_get_string_member(currencyObject, "buy_price");
-				data->sell_price = (char *) json_object_get_string_member(currencyObject, "sell_price");
+				data->acc_trade_value = (char *) json_object_get_string_member(currencyObject, "acc_trade_value");
+				data->prev_closing_price = (char *) json_object_get_string_member(currencyObject, "prev_closing_price");
+				data->units_traded_24H = (char *) json_object_get_string_member(currencyObject, "units_traded_24H");
+				data->acc_trade_value_24H = (char *) json_object_get_string_member(currencyObject, "acc_trade_value_24H");
+				data->fluctate_24H = (char *) json_object_get_string_member(currencyObject, "fluctate_24H");
+				data->fluctate_rate_24H = (char *) json_object_get_string_member(currencyObject, "fluctate_rate_24H");
 				data->date = json_object_get_int_member(currencyObject, "date");
 			}
 		}
@@ -123,7 +124,7 @@ display_data(appdata_s *ad)
 		naviData->ad = ad;
 		naviData->index = i;
 
-		sprintf(buf, "%s : %sWon", ad->currencyList[i], data->average_price);
+		sprintf(buf, "%s : %sWon ~ %sWon", ad->currencyList[i], data->min_price, data->max_price);
 		elm_list_item_append(list, buf, NULL, NULL, currency_item_clicked, naviData);
 	}
 
